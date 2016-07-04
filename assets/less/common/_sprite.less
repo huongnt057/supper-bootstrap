@@ -11,6 +11,28 @@ The large array-like variables contain all information about a single icon
 At the bottom of this section, we provide information about the spritesheet itself
 @spritesheet: width height image @spritesheet-sprites;
 */
+@icon-arrow-red-right-name: 'icon-arrow-red-right';
+@icon-arrow-red-right-x: 64px;
+@icon-arrow-red-right-y: 46px;
+@icon-arrow-red-right-offset-x: -64px;
+@icon-arrow-red-right-offset-y: -46px;
+@icon-arrow-red-right-width: 5px;
+@icon-arrow-red-right-height: 10px;
+@icon-arrow-red-right-total-width: 90px;
+@icon-arrow-red-right-total-height: 90px;
+@icon-arrow-red-right-image: '../images/sprite.png';
+@icon-arrow-red-right: 64px 46px -64px -46px 5px 10px 90px 90px '../images/sprite.png' 'icon-arrow-red-right';
+@icon-language-name: 'icon-language';
+@icon-language-x: 46px;
+@icon-language-y: 46px;
+@icon-language-offset-x: -46px;
+@icon-language-offset-y: -46px;
+@icon-language-width: 16px;
+@icon-language-height: 17px;
+@icon-language-total-width: 90px;
+@icon-language-total-height: 90px;
+@icon-language-image: '../images/sprite.png';
+@icon-language: 46px 46px -46px -46px 16px 17px 90px 90px '../images/sprite.png' 'icon-language';
 @icon-sound-blue-name: 'icon-sound-blue';
 @icon-sound-blue-x: 0px;
 @icon-sound-blue-y: 0px;
@@ -47,7 +69,7 @@ At the bottom of this section, we provide information about the spritesheet itse
 @spritesheet-width: 90px;
 @spritesheet-height: 90px;
 @spritesheet-image: '../images/sprite.png';
-@spritesheet-sprites: @icon-sound-blue @icon-sound-gray @icon-sound-pink;
+@spritesheet-sprites: @icon-arrow-red-right @icon-language @icon-sound-blue @icon-sound-gray @icon-sound-pink;
 @spritesheet: 90px 90px '../images/sprite.png' @spritesheet-sprites;
 
 /*

@@ -1086,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #000;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #000000;
   text-decoration: underline;
 }
 a:focus {
@@ -3388,7 +3388,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #337ab7;
+  color: #000;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3409,7 +3409,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #000000;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3989,7 +3989,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #000;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4708,7 +4708,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #000;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4729,7 +4729,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #000000;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -4929,7 +4929,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #000;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -5004,7 +5004,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #000;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -8814,6 +8814,14 @@ button.close {
 .fa-percent:before {
   content: "\f295";
 }
+.fontstyle {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+.fontfamily {
+  font-family: 'Open Sans', sans-serif;
+}
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -8861,9 +8869,39 @@ This must be run when you have at least 2 sprites.
 
 .sprites(@spritesheet-sprites);
 */
+header {
+  height: 34px;
+  background-color: #000;
+  width: 100%;
+}
+header ul li a {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+  display: block;
+  height: 35px;
+}
+header ul li a:hover {
+  background-color: #000;
+  opacity: 0.8;
+}
 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+.icon-arrow-red-right {
+  background-image: url(../images/sprite.png);
+  background-position: -64px -46px;
+  width: 5px;
+  height: 10px;
+}
+.icon-language {
+  background-image: url(../images/sprite.png);
+  background-position: -46px -46px;
+  width: 16px;
+  height: 17px;
 }
 .icon-sound-blue {
   background-image: url(../images/sprite.png);
@@ -8884,6 +8922,37 @@ This must be run when you have at least 2 sprites.
   height: 44px;
 }
 /* HOOK COMMONS STYLE */
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+.navbar-form .form-control {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: none !important;
+  height: 25px;
+  border-radius: 0 !important;
+  margin-top: -3px;
+}
+#header .language-sl {
+  padding-top: 5px;
+  text-align: right;
+  padding-right: -10px !important;
+}
+#header span {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+.nav > li > a {
+  padding: 10px 13px !important;
+}
+.nav > li > a:hover {
+  color: #ef7b0a;
+}
+section.slide {
+  background-image: url('../images/0059jpg');
+}
 .clear {
   clear: both;
 }
